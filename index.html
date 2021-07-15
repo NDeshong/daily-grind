@@ -75,7 +75,7 @@
 			</ul>
 		</p>
 
-		<h3>Click below to view coffee specials for other days of the week</h3>
+		<h3>Click below to view coffee specials for other days of the week. Enjoy the grind!</h3>
 		<p><a href="?day=0">Sunday</a></p>
 		<p><a href="?day=1">Monday</a></p>
 		<p><a href="?day=2">Tuesday</a></p>
@@ -132,33 +132,56 @@
 
 
 		switch(today){
+			case 0:
+			coffee = {
+				name: "Cold Brew",
+				pic: "images/cold-brew.jpg",
+				alt: "Cold Brew",
+				color: "#cc9966",
+				day: "Sunday",
+				desc: `Say I Do, to your favorite brew`
+			};
+			break;
 
 
+			case 1:
+			coffee = {
+				name: "Mocha",
+				pic: "images/mocha.jpg",
+				alt: "Mocha",
+				color: "brown",
+				day: "Monday",
+				desc: `Take a cup and forget about Monday for a few minutes`
+			};
+			break;
 
 
-
-
-		case 2:
+			case 2:
 			coffee = {
 				name: "Drip",
 				pic: "images/drip.jpg",
 				alt: "Drip Coffee",
-				color: "brown",
+				color: "black",
 				day: "Tuesday",
-				desc: `I just need the drip!!`
+				desc: `Love at first sip, need the drip`
+
+			};
+			break;
+
+			case 3:
+			coffee = {
+				name: "Caramel Latte",
+				pic: "images/caramel-latte.jpg",
+				alt: "Caramel Lattee",
+				color: "DarkGoldenRod",
+				day: "Wednesday",
+				desc: `The best grain, the finest roast, the most powerful flavor.`
 
 			};
 			break;
 
 
-
-
-
-
-
-
-
-		case 4:
+			case 4:
 			coffee = {
 				name: "Pumpkin Spice Latte",
 				pic: "images/pumpkin-spice-latte.jpg",
@@ -170,6 +193,29 @@
 			};
 			break;
 
+			case 5:
+			coffee = {
+				name: "Frappaccino",
+				pic: "images/frappacino.jpg",
+				alt: "Frappaccino",
+				color: "DarkSalmon",
+				day: "Friday",
+				desc: `Smooth and balanced, never bitter or sour`
+
+			};
+			break;
+
+			case 6:
+			coffee = {
+				name: "Bubble Tea",
+				pic: "images/bubble-tea.jpg",
+				alt: "Bubble Tea",
+				color: "plum",
+				day: "Saturday",
+				desc: `A boba a day, keeps reality away`
+
+			};
+			break;
 
 		}
 
